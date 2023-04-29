@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/codoacodo.png" alt="Logo" width="90" height="60"
@@ -105,8 +105,6 @@
                     <div class="card">
                         <img src="./assets/img/steve.jpg" class="card-img-top" alt="Imagen de Steve Jobs">
                         <div class="card-body">
-                            <span class="badge bg-warning text-dark">Javascript</span>
-                            <span class="badge bg-info text-light">React</span>
                             <h5 class="card-title">Steve Jobs</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content. This content is a little bit longer.</p>
@@ -117,8 +115,6 @@
                     <div class="card">
                         <img src="./assets/img/bill.jpg" class="card-img-top" alt="Imagen de Bill Gates">
                         <div class="card-body">
-                            <span class="badge bg-warning text-dark">Javascript</span>
-                            <span class="badge bg-info text-light">React</span>
                             <h5 class="card-title">Bill Gates</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content. This content is a little bit longer.</p>
@@ -129,8 +125,6 @@
                     <div class="card">
                         <img src="./assets/img/ada.jpeg" class="card-img-top" alt="Imagen de Ada Lovelace">
                         <div class="card-body">
-                            <span class="badge bg-secondary text-light">Negocios</span>
-                            <span class="badge bg-danger text-light">Startups</span>
                             <h5 class="card-title">Ada Lovelace</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content.</p>
@@ -162,75 +156,30 @@
             </div>
         </div>
 
-        <!--Formulario-->
         <form>
-            <div class="container col-6 text-center">
+            <div class="container text-center">
                 <div class="presentacion">
                     <p>CONVIÉRTETE EN UN</p>
                     <h3>ORADOR</h3>
                 </div>
-                <div class="presentacion2 mt-4">
-                    <p>Anótate como orador para dar una <a href="#" style="text-decoration: underline dotted;">charla
-                            ignite</a>. Cuéntanos de qué quieres hablar!
-                    </p>
-                </div>
-
-                <div class="input-group flex-nowrap mb-4">
-                    <input type="text" class="form-control me-5" id="exampleName" aria-describedby="nameHelp"
-                        placeholder="Nombre">
-                    <input type="text" class="form-control" id="exampleSurname" aria-describedby="nameHelp"
-                        placeholder="Apellido">
+                <div class="mb-3 mt-4">
+                    <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+                    <input type="text" class="form-control" id="exampleName" aria-describedby="nameHelp" placeholder="Nombre">
+                    <input type="text" class="form-control" id="exampleSurname" aria-describedby="nameHelp" placeholder="Apellido">
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control form-control-lg" rows="3" aria-label="With textarea"
-                        placeholder="Sobre qué quieres hablar"></textarea>
-                    <div id="passwordHelpBlock" class="form-text text-start">
-                        Recuerda incluir un título para tu charla.
-                    </div>
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-
-
-                <div class="d-grid gap-2 mb-4">
-                    <button class="btn btn-lg" type="button"
-                        style="background-color: #81c53d; color: white;">Enviar</button>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         </div>
+
     </main>
-
-    <footer>
-        <!--Nav del footer-->
-        <nav class="navbar navbar-expand navbar-dark p-4" style="background-color:#203c49;">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto px-3 d-flex flex-wrap">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Preguntas frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contáctanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Prensa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conferencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Términos y condiciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Estudiantes</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
