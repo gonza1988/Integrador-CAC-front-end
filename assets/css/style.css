@@ -1,6 +1,28 @@
-
 .navbar {
     background-color: #000000b0;
+}
+
+.contenido-imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    background-image: url(../img/ba1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+
+.imagen-text {
+    padding-left: 51vw;
+    padding-right: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .presentacion {
@@ -22,7 +44,47 @@
     font-size: 14px;
 }
 
-a {
-    color: black;
+
+/* responsive design mobil */
+@media (min-width: 578px) and (max-width: 992px) {
+    .imagen-text p {
+        font-size: 24px;
+    }
+
+    .contenido-imagen {
+        height: 100vh;
+    }
+
+    .imagen-text {
+        padding-left: 18vw;
+        padding-right: 10vw;
+    }
+
+    .titulo {
+        font-size: 4rem;
+    }
+
+    /* Modificaciones a BS5 */
+    .btn {
+        font-size: 25px !important;
+        padding: 1rem 0.5rem !important;
+    }
 }
 
+/* responsive design mobil (landscape) */
+@media only screen and (min-device-height: 320px) and (max-device-height: 570px) and (orientation: landscape) {
+    .imagen-text p {
+        font-size: 30px;
+    }
+
+    .contenido-imagen {
+        height: 120vh;
+    }
+
+    .imagen-text {
+        padding-left: 18vw;
+        padding-right: 10vw;
+        display: flex;
+        justify-content: start;
+    }
+}
