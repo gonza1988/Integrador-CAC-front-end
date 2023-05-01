@@ -9,7 +9,7 @@
     align-items: end;
     background-image: url(../img/ba1.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     color: white;
     height: 100vh;
@@ -44,8 +44,13 @@
     font-size: 14px;
 }
 
+.footer-nav {
+    background-color: #203c49;
+    display: flex;
+    justify-content: center;
+}
 
-/* responsive design mobil */
+/* responsive */
 @media (min-width: 578px) and (max-width: 992px) {
     .imagen-text p {
         font-size: 24px;
@@ -64,14 +69,13 @@
         font-size: 4rem;
     }
 
-    /* Modificaciones a BS5 */
     .btn {
         font-size: 25px !important;
         padding: 1rem 0.5rem !important;
     }
 }
 
-/* responsive design mobil (landscape) */
+/* responsive design mobil(pantalla costado)*/
 @media only screen and (min-device-height: 320px) and (max-device-height: 570px) and (orientation: landscape) {
     .imagen-text p {
         font-size: 30px;
