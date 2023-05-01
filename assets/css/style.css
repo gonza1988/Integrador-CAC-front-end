@@ -44,6 +44,11 @@
     font-size: 14px;
 }
 
+.footer-nav {
+    background-color: #203c49;
+    display: flex;
+    justify-content: center;
+}
 
 /* responsive design mobil */
 @media (min-width: 578px) and (max-width: 992px) {
