@@ -50,6 +50,9 @@
     justify-content: center;
 }
 
+#advTickets {
+    display: none;
+}
 
 /* responsive */
 @media (min-width: 578px) and (max-width: 992px) {

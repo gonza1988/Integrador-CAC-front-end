@@ -107,7 +107,7 @@
                         placeholder="Apellido">
                 </div>
                 <div class="input-group flex-nowrap mb-4">
-                    <input type="email" class="form-control" id="exampleName" aria-describedby="nameHelp"
+                    <input type="email" class="form-control" id="exampleEmail" aria-describedby="nameHelp"
                         placeholder="Correo">
                 </div>
                 <div class="row">
@@ -133,10 +133,13 @@
                 <div id="monto" class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 mt-4">
                     Total a Pagar: $
                 </div>
+                <div id="advTickets" class="form-text text-start" style="color: red;">
+                    Debes colocar la cantidad de tickets a comprar!!!
+                </div>
 
                 <div class="row">
                     <div class="col-6">
-                        <button class="btn btn-md btn-block w-100 mt-4" type="button"
+                        <button onclick="borrar()" class="btn btn-md btn-block w-100 mt-4" type="button"
                             style="background-color: #81c53d; color: white;">Borrar</button>
                     </div>
                     <div class="col-6">
